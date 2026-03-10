@@ -24,6 +24,8 @@ instruments_homework2/
 └── requirements.txt
 ```
 
+## ВАЖНО: ЧТОБЫ ПРОВЕРИТЬ ЛОКАЛЬНО, НУЖНО ИЗМЕНИТЬ 23 СТРОЧКУ В ФАЙЛЕ С БЕКЭНДОМ!
+
 ## Установка (не все из этого обязательно)
 
 ```bash
@@ -98,14 +100,6 @@ pytest
 - Start Command: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 
 Если frontend будет размещён отдельно, задайте `CORS_ORIGINS=https://<your-streamlit-app>.streamlit.app`.
-
-### Frontend в Streamlit Cloud
-
-1. Подключите репозиторий к Streamlit Cloud.
-2. В качестве entrypoint укажите `frontend/app.py`.
-3. Добавьте secret:
-
-```toml
 API_URL = "https://<your-render-service>.onrender.com"
 ```
 
