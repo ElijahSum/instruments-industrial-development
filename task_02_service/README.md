@@ -92,15 +92,11 @@ pytest
 
 ## Деплой
 
-### Backend на Render
+### Backend НЕ НА RENDER, использовал модный Railway
 
-В репозитории уже добавлен `render.yaml`. Можно создать Web Service из этого проекта или настроить вручную:
+Ссылка на Streamlit Cloud: https://instruments-industrial-development-uvomhkwavuqeyw6t7psy3n.streamlit.app
+Ссылка на деплой бека: instruments-industrial-development-production.up.railway.app
 
-- Build Command: `pip install -r requirements.txt`
-- Start Command: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
 
-Если frontend будет размещён отдельно, задайте `CORS_ORIGINS=https://<your-streamlit-app>.streamlit.app`.
-API_URL = "https://<your-render-service>.onrender.com"
-```
 
 После этого UI будет работать с удалённым backend через API.
