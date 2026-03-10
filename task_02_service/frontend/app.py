@@ -19,7 +19,9 @@ def get_api_url() -> str:
 
     if secret_url:
         return str(secret_url).rstrip("/")
-    return os.getenv("API_URL", "http://127.0.0.1:8000").rstrip("/")
+    # ЕСЛИ ХОТИТЕ РАНИТЬ ЛОКАЛЬНО, ИЗМЕНИТЕ ДИРЕКТОРИЮ НА:
+    # return os.getenv("API_URL", "http://127.0.0.1:8000").rstrip("/") 
+    return os.getenv("API_URL", "https://instruments-industrial-development-production.up.railway.app").rstrip("/")
 
 
 API_URL = get_api_url()
